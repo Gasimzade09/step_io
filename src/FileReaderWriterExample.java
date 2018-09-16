@@ -56,4 +56,18 @@ public class FileReaderWriterExample {
         }
     }
 
+    /**
+     * InputStreamReader
+     * OutputStreamWriter
+     */
+
+    public void  example() throws FileNotFoundException, UnsupportedEncodingException {
+        FileInputStream in = new FileInputStream(
+                new File("path to file"));
+        InputStreamReader reader =
+                new InputStreamReader(in, "UTF-8");
+    }
+
+
+
 }
