@@ -37,7 +37,6 @@ public class FileReaderWriterExample {
                 System.getProperty("line.separator"));
             }
 
-
         } catch (FileNotFoundException e) {
             LOGGER.log(Level.SEVERE, "File not found", e);
         } catch (IOException e) {

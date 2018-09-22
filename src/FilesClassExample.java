@@ -66,9 +66,9 @@ public class FilesClassExample {
                         File.separator +
                         "outputExample";
 
-        Path outputPath = Paths.get(outputFolderPath);
+//        Path outputPath = Paths.get(outputFolderPath);
 
-        Files.copy(Paths.get(inputFolderPath), outputPath, StandardCopyOption.REPLACE_EXISTING);
+//        Files.copy(Paths.get(inputFolderPath), outputPath, StandardCopyOption.REPLACE_EXISTING);
 
         try(Stream<Path> paths = Files.walk(Paths.get(inputFolderPath))) {
            paths.forEach(filePath -> {

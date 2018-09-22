@@ -12,6 +12,8 @@ public class FileExample {
     public void fileCreationExample() {
         String fileName = "example.txt";
         String dirName = System.getProperty("user.dir");
+//        Одно и тоже
+//        String dirName = "C:\\Users\\taghiyevr\\IdeaProjects\\io";
         String fullName = dirName + File.separator + fileName;
         System.out.println(fullName);
 
@@ -36,7 +38,6 @@ public class FileExample {
         long freeSpaceInGb = freeSpace/1024/1024/1024;
         System.out.println(freeSpaceInGb);
         System.out.println(totalSpace);
-
 
     }
 
